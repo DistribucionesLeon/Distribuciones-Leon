@@ -7,15 +7,48 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header>
+        <img src="LOGO.jpeg" alt="Logo de la empresa" class="logo" onclick="showPromotions()">
+        <nav>
+            <ul>
+                <li id="about-tab">Acerca de Nosotros</li>
+            </ul>
+        </nav>
+    </header>
+
     <div class="container">
-        <h1>Catálogo de Productos</h1>
-        <div class="category" onclick="openCatalog('ferreteria.pdf')">Ferretería</div>
-        <div class="category" onclick="openCatalog('cuidado_personal.pdf')">Cuidado Personal</div>
-        <div class="category" onclick="openCatalog('cacharreria.pdf')">Cacharrería</div>
-        <div class="category" onclick="openCatalog('drogueria.pdf')">Droguería</div>
-        <div class="category" onclick="openCatalog('papeleria.pdf')">Papelería</div>
-	<div class="category" onclick="openCatalog('hogar.pdf')">Hogar</div>
+        <aside class="sidebar">
+            <h2>Categorías</h2>
+            <ul>
+                <li onclick="openCatalog('ferreteria.pdf')">Ferretería</li>
+                <li onclick="openCatalog('cuidado_personal.pdf')">Cuidado Personal</li>
+                <li onclick="openCatalog('cacharreria.pdf')">Cacharrería</li>
+                <li onclick="openCatalog('drogueria.pdf')">Droguería</li>
+                <li onclick="openCatalog('papeleria.pdf')">Papelería</li>
+                <li onclick="openCatalog('hogar.pdf')">Hogar</li>
+            </ul>
+        </aside>
+
+        <main id="content">
+            <h1>Promociones</h1>
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <img src="promocion1.jpeg" alt="Promoción 1">
+                    <img src="promocion2.jpeg" alt="Promoción 2">
+                    <img src="promocion3.jpeg" alt="Promoción 3">
+                    <img src="promocion4.jpeg" alt="Promoción 4">
+                    <img src="promocion5.jpeg" alt="Promoción 5">
+                </div>
+            </div>
+        </main>
     </div>
+
+    <div class="whatsapp-float" onclick="openWhatsApp()">
+        📱 Contáctanos para realizar tu pedido
+    </div>
+
+  
+
     <script src="script.js"></script>
 </body>
 </html>
